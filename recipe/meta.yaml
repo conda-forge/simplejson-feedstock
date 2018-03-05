@@ -1,24 +1,21 @@
-{% set name = "simplejson" %}
 {% set version = "3.13.2" %}
-{% set sha256 = "4c4ecf20e054716cc1e5a81cadc44d3f4027108d8dd0861d8b1e3bd7a32d4f0a" %}
 
 package:
-  name: {{ name|lower }}
+  name: simplejson
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/s/simplejson/simplejson-{{ version }}.tar.gz
+  sha256: 4c4ecf20e054716cc1e5a81cadc44d3f4027108d8dd0861d8b1e3bd7a32d4f0a
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: REQUIRE_SPEEDUPS=1 python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -26,6 +23,9 @@ test:
   imports:
     - simplejson
     - simplejson.tests
+  commands:
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://github.com/simplejson/simplejson
