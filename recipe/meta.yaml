@@ -10,7 +10,10 @@ source:
 
 build:
   number: 0
-  script: REQUIRE_SPEEDUPS=1 python -m pip install --no-deps --ignore-installed .
+  script:
+    - export REQUIRE_SPEEDUPS=1  # [not win]
+    - set REQUIRE_SPEEDUPS=1  # [win]
+    - python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
