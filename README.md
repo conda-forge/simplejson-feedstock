@@ -18,14 +18,16 @@ an optional C extension for a serious speed boost.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/simplejson-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/simplejson-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/simplejson-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/simplejson-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/simplejson-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/simplejson-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/simplejson-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/simplejson-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/simplejson-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/simplejson-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/simplejson-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/simplejson-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/simplejson/badges/version.svg)](https://anaconda.org/conda-forge/simplejson)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/simplejson/badges/downloads.svg)](https://anaconda.org/conda-forge/simplejson)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-simplejson-green.svg)](https://anaconda.org/conda-forge/simplejson) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/simplejson.svg)](https://anaconda.org/conda-forge/simplejson) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/simplejson.svg)](https://anaconda.org/conda-forge/simplejson) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/simplejson.svg)](https://anaconda.org/conda-forge/simplejson) |
 
 Installing simplejson
 =====================
