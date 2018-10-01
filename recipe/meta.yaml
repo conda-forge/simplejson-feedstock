@@ -9,11 +9,11 @@ source:
   sha256: 20c626174a3cfcc69c783930ac2d5daa72787a8e26398e33c978065a51cc8bf4
 
 build:
-  number: 0
+  number: 1
   script:
     - export REQUIRE_SPEEDUPS=1  # [not win]
     - set REQUIRE_SPEEDUPS=1  # [win]
-    - python -m pip install --no-deps --ignore-installed .
+    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
