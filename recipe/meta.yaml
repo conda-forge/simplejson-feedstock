@@ -27,7 +27,7 @@ requirements:
 test:
   imports:
     - simplejson
-    - simplejson._speedups
+    - simplejson._speedups   # [python_impl != 'pypy']
     - simplejson.tests
 
 about:
