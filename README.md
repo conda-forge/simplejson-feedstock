@@ -5,7 +5,7 @@ Home: http://github.com/simplejson/simplejson
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple, fast, extensible JSON encoder/decoder for Python
 
