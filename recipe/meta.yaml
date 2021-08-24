@@ -1,4 +1,4 @@
-{% set version = "3.17.4" %}
+{% set version = "3.17.5" %}
 
 package:
   name: simplejson
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/simplejson/simplejson-{{ version }}.tar.gz
-  sha256: 2af85e028714c4b6cb2eb6fc03aa91f39ffd654f2eb2f6f8f860e14aeefa6be1
+  sha256: 91cfb43fb91ff6d1e4258be04eee84b51a4ef40a28d899679b9ea2556322fb50
 
 build:
   number: 0
