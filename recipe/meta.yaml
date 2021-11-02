@@ -9,7 +9,7 @@ source:
   sha256: 91cfb43fb91ff6d1e4258be04eee84b51a4ef40a28d899679b9ea2556322fb50
 
 build:
-  number: 0
+  number: 1
   script:
     - export REQUIRE_SPEEDUPS=1  # [not win]
     - set REQUIRE_SPEEDUPS=1  # [win]
