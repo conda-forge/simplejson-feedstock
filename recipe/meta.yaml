@@ -9,7 +9,7 @@ source:
   sha256: 6ae4186f90362e9c03c80a1cd5062a20f3a11ac9d391f7ee0ef0701a0e2b7394
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   script:
     - export REQUIRE_SPEEDUPS=1  # [not win]
