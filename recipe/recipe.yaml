@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  version: "4.3.0"
+
+package:
+  name: simplejson
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/s/simplejson/simplejson-${{ version }}.tar.gz
+  sha256: ffe34ab51a0d37e6d1c661a5672df00d2d5e18804e38eac07abffb83fa5ec3d7
+
+build:
+  number: 0
+  script:
+    - if: unix
+      then: export REQUIRE_SPEEDUPS=1
+    - if: win
+      then: set REQUIRE_SPEEDUPS=1
+    - ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - setuptools >=42
+    - pip
+  run:
+    - python
+
+tests:
+  - python:
+      imports:
+        - simplejson
+        - simplejson._speedups
+      pip_check: true
+
+about:
+  summary: Simple, fast, extensible JSON encoder/decoder for Python
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  homepage: https://github.com/simplejson/simplejson
+  repository: https://github.com/simplejson/simplejson
+
+extra:
+  recipe-maintainers:
+    - ainafp
+    - ocefpaf
