@@ -3,21 +3,13 @@ About simplejson-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simplejson-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/simplejson/simplejson
+Home: https://github.com/simplejson/simplejson
 
-Package license: MIT
+Package license: Apache-2.0
 
 Summary: Simple, fast, extensible JSON encoder/decoder for Python
 
 Development: https://github.com/simplejson/simplejson
-
-Documentation: http://simplejson.readthedocs.io/
-
-simplejson is a simple, fast, complete, correct and extensible
-JSON <http://json.org> encoder and decoder for Python 2.5+ and
-Python 3.3+. It is pure Python code with no dependencies, but includes
-an optional C extension for a serious speed boost.
-
 
 Current build status
 ====================
@@ -234,6 +226,7 @@ mamba repoquery depends simplejson --channel conda-forge
 </details>
 
 
+
 About conda-forge
 =================
 
@@ -248,9 +241,7 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
-[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+[Azure](https://azure.microsoft.com/en-us/services/devops/) and [GitHub](https://github.com/)
 it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
