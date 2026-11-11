@@ -3,21 +3,13 @@ About simplejson-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simplejson-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/simplejson/simplejson
+Home: https://github.com/simplejson/simplejson
 
-Package license: MIT
+Package license: Apache-2.0
 
 Summary: Simple, fast, extensible JSON encoder/decoder for Python
 
 Development: https://github.com/simplejson/simplejson
-
-Documentation: http://simplejson.readthedocs.io/
-
-simplejson is a simple, fast, complete, correct and extensible
-JSON <http://json.org> encoder and decoder for Python 2.5+ and
-Python 3.3+. It is pure Python code with no dependencies, but includes
-an optional C extension for a serious speed boost.
-
 
 Current build status
 ====================
